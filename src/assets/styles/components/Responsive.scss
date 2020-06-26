@@ -1,0 +1,195 @@
+@import "./Variables.scss";
+@import "./mixin.scss";
+
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  body{
+    margin: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  header {
+    justify-content: space-between;
+    label {
+      display: block;
+    }
+    .button {
+      display: none;
+    }
+  }
+
+  .section {
+    display: block;
+    &__graphic{
+      margin-bottom: 0px;
+      figure {
+        justify-content: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__product {
+      text-align: center;
+      h1 {
+        font-size: 41px;
+        line-height: 50px;
+      }
+      p {
+        margin-top: 4%;
+        font-size: 15px;
+        line-height: 28px;
+      }
+    }
+    &__manage {
+      text-align: center;
+      h2 {
+        font-size: 35px;
+        line-height: 45px;
+      }
+      p {
+        margin-top: 4%;
+        font-size: 15px;
+        line-height: 28px;
+      }
+    }
+
+    &__track {
+      @include positionRelative;
+      &--one {
+        @include cardResponsive;
+      }
+    }
+  
+    &__report {
+      @include positionRelative;
+      &--two {
+        @include cardResponsive;
+      }
+    }
+  
+    &__place {
+      @include positionRelative;
+      &--three {
+        @include cardResponsive;
+      }
+    }
+  }
+
+
+
+  .menu {
+    position: absolute;
+    background: #4E94AB;
+    width: 30%;
+    margin-left: -70%;
+    ul {
+      flex-direction: column;
+      li {
+        border-top: 1px solid #fff;
+      }
+    }
+  }
+
+  .said {
+    margin-bottom: 20%;
+    &__they {
+      font-size: 30px;
+    }
+  }
+
+  .they {
+    display: flex;
+    justify-content: center;
+    &__one {
+      display: none;
+    }
+    &__two {
+      h3 {
+        margin-top: 7%;
+        margin-bottom: 7%;
+      }
+      p {
+        font-size: 18px;
+      }
+    } 
+    &__three {
+      display: none;
+    }
+  }
+
+  .footer1 {
+    display: block;
+    justify-content: center;
+    padding-bottom: 18%;
+    h1 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 44px;
+      margin-left: 0;
+      margin-bottom: 4%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    div {
+      margin-right: 0;
+    }
+  }
+
+  .App .footer2 {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 200px 60px 60px 60px;
+    grid-template-areas: "input input"
+                         "menu1 menu2"
+                         "networks networks"
+                         "logo logo"
+                         "copyright copyright";
+    &__input {
+      justify-content: center;
+  
+    }
+  
+    &__networks {
+      justify-content: center;
+      &--icon {
+        img {
+          width: 30px;
+        }
+      }
+    }
+  
+    &__networks a {
+      margin-right: 7%;
+    }
+  
+    &__logo {
+      justify-content: center;
+      margin-top: 10%;
+    }
+  
+    &__networks {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__menu1 {
+      justify-content: center;
+    }
+  
+    &__menu2 {
+      justify-content: center;
+    }
+    
+    .footer2__copyright {
+      justify-content: center;
+    }
+  
+    .footer2__inputButton {
+      justify-content: center;
+      margin-top: 7%;
+    }
+  }
+}

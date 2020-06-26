@@ -1,5 +1,17 @@
-body {
-  margin: 0;
-  background-color: red;
-  color: white;
+@import "./components/Variables.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+body  {
+  max-width: 1440px;
+	font-family: $Typography;
+	// margin: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 }

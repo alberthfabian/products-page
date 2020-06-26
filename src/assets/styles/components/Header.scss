@@ -1,0 +1,56 @@
+@import "./Mixin";
+@import "./Variables";
+@import "./Responsive.scss";
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 40px;;
+  label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+  }
+  label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+  }
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+#btn-menu {
+  display: none;
+  &:checked ~ .menu {
+    margin-left: 48%;
+  }
+}
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex; 
+  li a {
+    display: block;
+    padding: 15px 20px;
+    color: hsl(228, 39%, 23%);
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  li:hover {
+    background: hsl(12, 88%, 59%);
+  }
+}
+
+.button {
+  @include button;
+}

@@ -1,0 +1,78 @@
+@import "./Responsive.scss";
+@import "./Mixin.scss";
+@import "./Variables.scss";
+
+.footer2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  grid-template-areas: "logo menu1 menu2 input"
+                       "networks menu1 menu2 copyright";
+  background-color: $Very-Dark-Blue;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  
+  .footer2 {
+    &__logo {
+      grid-area: logo;
+    }
+    &__networks {
+      grid-area: networks;
+      a {
+        margin-right: 5%;
+      }
+    }
+    &__menu1 {
+      grid-area: menu1;
+      @include menu;
+    }
+    &__menu2 {
+      grid-area: menu2;
+      @include menu;
+    }
+    &__input {
+      display: block;
+      grid-area: input;
+      #emailOK {
+        color: red;
+        font-style: italic;
+        margin: 5%;
+      }
+    }
+    &__inputButton{
+      display: flex;
+      align-items: flex-end;
+      margin-top: 14%;
+      input {
+        width: 250px;
+        height: 50px;
+        border-radius: 30px;
+      }
+    }
+    &__button{
+      padding: 15px 25px 15px 25px;
+      background-color: $Bright-Red;
+      border-radius: 30px;
+      margin-left: 2%;
+      &--go {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          background-color: $Very-Bright-Red;
+        }
+      }
+    }
+    &__copyright {
+      grid-area: copyright;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-bottom: 5%;
+      color: $Vary-Light-Gray;
+    }
+  }
+}
+

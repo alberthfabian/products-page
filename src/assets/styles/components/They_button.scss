@@ -1,0 +1,13 @@
+@import "./Mixin.scss";
+@import "./Variables.scss";
+@import "./Responsive.scss";
+
+.they__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 8%;
+  &--only {
+    @include button;
+  }
+}

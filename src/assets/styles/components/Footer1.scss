@@ -1,0 +1,34 @@
+@import "./Variables.scss";
+@import "./Mixin.scss";
+@import "./Responsive.scss";
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: $Bright-Red;
+  font-size: 20px; 
+  line-height: 45px;
+  color: $Vary-Light-Gray;
+  height: 240px;
+  align-items: center;
+  h1 {
+    margin-left: 10%;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    a { 
+      background-color: $Vary-Light-Gray;
+      border-radius: 25px;
+      color: $Bright-Red;
+      padding: 10px 32px 20px 32px;
+      font-size: 16px;
+      text-decoration: none;
+      height: 15px;
+      cursor: pointer;  
+      display: flex;
+      align-items: center;
+    }
+  }
+}

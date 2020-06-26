@@ -1,0 +1,20 @@
+@import "./Mixin.scss";
+@import "./Variables.scss";
+@import "./Responsive.scss";
+
+.they {
+  display: flex;
+  justify-content: center;
+  &__one {
+    max-width: 435px;
+    @include card;
+  }
+  &__two {
+    max-width: 435px;
+    @include card;
+  }
+  &__three {
+    max-width: 435px;
+    @include card;
+  }
+}

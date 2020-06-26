@@ -1,0 +1,12 @@
+@import "./mixin.scss";
+@import "./Variables.scss";
+@import "./Responsive.scss";
+
+.said {
+  margin-bottom: 10%;
+  &__they {
+    display: flex;
+    justify-content: center;
+    @include title (47px, 47px);
+  }
+}
