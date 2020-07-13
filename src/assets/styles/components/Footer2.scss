@@ -44,6 +44,14 @@
       display: flex;
       align-items: flex-end;
       margin-top: 14%;
+      .form {
+        display: flex;
+        .footer2__button {
+          width: 70px;
+          margin-left: 5px;
+          color: $Vary-Light-Gray;
+        }
+      }
       input {
         width: 250px;
         height: 50px;
@@ -54,7 +62,7 @@
       padding: 15px 25px 15px 25px;
       background-color: $Bright-Red;
       border-radius: 30px;
-      margin-left: 2%;
+      margin-left: 5px;
       &--go {
         color: white;
         font-size: 16px;

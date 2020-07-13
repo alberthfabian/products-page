@@ -102,8 +102,15 @@
   .they {
     display: flex;
     justify-content: center;
+    animation: move 200s infinite alternate;
     &__one {
-      display: none;
+      h3 {
+        margin-top: 7%;
+        margin-bottom: 7%;
+      }
+      p {
+        font-size: 18px;
+      }
     }
     &__two {
       h3 {
@@ -115,7 +122,26 @@
       }
     } 
     &__three {
-      display: none;
+      h3 {
+        margin-top: 7%;
+        margin-bottom: 7%;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    &__four {
+      h3 {
+        margin-top: 7%;
+        margin-bottom: 7%;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    @keyframes move {
+      from {right: -700px;}
+      to {right: 700px;}
     }
   }
 

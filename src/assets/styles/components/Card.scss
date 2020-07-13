@@ -2,19 +2,243 @@
 @import "./Variables.scss";
 @import "./Responsive.scss";
 
-.they {
-  display: flex;
-  justify-content: center;
-  &__one {
-    max-width: 435px;
-    @include card;
+
+.card {
+  overflow: hidden;
+  .they {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: move 15s infinite alternate;
+    .they__one {
+      margin-top: 55px;
+      max-width: 435px;
+      min-width: 434px;
+      @include card;
+    }
+    .they__two {
+      margin-top: 55px;
+      max-width: 435px;
+      min-width: 430px;
+      @include card;
+    }
+    .they__three {
+      margin-top: 55px;
+      max-width: 435px;
+      min-width: 430px;
+      @include card;
+    }
+    .they__four {
+      margin-top: 55px;
+      max-width: 435px;
+      min-width: 430px;
+      @include card;
+    }
   }
-  &__two {
-    max-width: 435px;
-    @include card;
-  }
-  &__three {
-    max-width: 435px;
-    @include card;
+  
+  
+  @keyframes move {
+    from {right: -300px;}
+    to {right: 300px;}
   }
 }
+
+
+
+// .slider {
+//   width: 95%;
+//   margin: auto;
+//   overflow: hidden;
+// }
+
+// .slider ul {
+//   display: flex;
+//   padding: 0;
+//   width: 400%;
+
+//   animation: cambio 20s infinite alternate;
+//   animation-timing-function: linear;
+// }
+
+
+
+
+
+
+
+
+
+
+
+// .slider {
+//   height: 140px;
+//   width: 100%;
+//   margin: auto;
+//   overflow: hidden;
+//   ul {
+//     display: flex;
+//     padding: 0;
+//     width: 380%;
+//     animation: cambio 5s infinite alternate;
+//     animation-timing-function: linear;
+//     li {
+//       width: 100%;
+//       list-style: none;
+//       .they1 {
+//         display: flex;
+//         justify-content: center;
+//         position: absolute;
+//         width: 100%;
+//         .they__one {
+//           width: 380px;
+//           @include card;
+//         }
+//         .they__two {
+//           width: 380px;
+//           @include card;
+//         }
+//         .they__three {
+//           width: 380px;
+//           @include card;
+//         }
+//       }
+
+//       .they2 {
+//         display: flex;
+//         justify-content: center;
+//         position: absolute;
+//         width: 100%;
+//         .they__one {
+//           width: 380px;
+//           @include card;
+//         }
+//         .they__two {
+//           width: 380px;
+//           @include card;
+//         }
+//         .they__three {
+//           width: 380px;
+//           @include card;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// @keyframes cambio {
+//   0% {margin-left: 0;}
+//   20% {margin-left: 0;}
+
+//   25% {margin-left: -100%;}
+//   45% {margin-left: -100%;}
+
+//   50% {margin-left: -200%;}
+//   70% {margin-left: -200%;}
+
+//   75% {margin-left: -300%;}
+//   100% {margin-left: -300%;}
+// }
+
+
+
+
+
+
+
+
+
+
+
+// .slider {
+//   height: 140px;
+//   width: 100%;
+//   // margin: auto;
+//   overflow: hidden;
+//   ul {
+//     display: flex;
+//     padding: 0;
+//     // width: 100%;
+//     animation: cambio 5s infinite alternate;
+//     // animation-timing-function: linear;
+//     li {
+//       width: 100%;
+//       list-style: none;
+//       .one {
+//         width: 405px;
+//         // background-color: red;
+//         .they1 {
+//           display: flex;
+//           justify-content: center;
+//           position: absolute;
+//           width: 100%;
+//           .they__one {
+//             width: 380px;
+//             @include card;
+//           }
+//           .they__two {
+//             width: 380px;
+//             @include card;
+//           }
+//           .they__three {
+//             width: 380px;
+//             @include card;
+//           }
+//         }
+//       }
+//       .two {
+//         width: 405px;
+//         // background-color: green;
+//         .they2 {
+//           display: flex;
+//           justify-content: center;
+//           position: absolute;
+//           width: 100%;
+//           .they__one {
+//             width: 380px;
+//             @include card;
+//           }
+//           .they__two {
+//             width: 380px;
+//             @include card;
+//           }
+//           .they__three {
+//             width: 380px;
+//             @include card;
+//           }
+//         }
+//       }
+//       .three {
+//         width: 405px;
+//         // background-color: blue;
+//       }
+//       .four {
+//         width: 405px;
+//         background-color: black;
+//       }
+//       .five {
+//         width: 405px;
+//         background-color: yellow;
+//       }
+//       .six {
+//         width: 405px;
+//         background-color: orange;
+//       }
+//     }
+//   }
+// }
+
+
+// @keyframes cambio {
+//   0% {margin-left: 0;}
+//   // 20% {margin-left: 0;}
+
+//   // 20% {margin-left: -100%;}
+//   45% {margin-left: -100%;}
+
+//   // 45% {margin-left: -200%;}
+//   70% {margin-left: -700%;}
+
+//   // 70% {margin-left: -300%;}
+//   100% {margin-left: -1200%;}
+// }
